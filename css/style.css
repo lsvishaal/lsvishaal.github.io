@@ -1,5 +1,5 @@
 html {
-  font-size: 13px;
+  font-size: 14px;
 }
 body {
   /*color: white;
@@ -34,14 +34,14 @@ header {
 }
 h2 {
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 1.6rem;
   /*display: flex;*/
   margin: 0;
   padding-bottom: 0.5rem;
   border-bottom: 0.1rem solid #bfb5b5;
 }
 h2 i {
-  font-size: 2rem;
+  font-size: 1.6rem;
   align-self: center;
   margin-right: 1rem;
 }
