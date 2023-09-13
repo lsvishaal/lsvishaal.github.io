@@ -3,168 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Form</title>
+    <title>HTML 5 Boilerplate</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <style>
-        /* Customize the gradient background */
-        .gradient-form {
-            background: linear-gradient(to right, #9400cf, #da70c1, #da70c1, #9400cf);
-            min-height: 100vh;
-        }
-
-        /* Enhance the card's drop shadow */
-        .custom-card {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Adjust the shadow values as needed */
-            border-radius: 15px; /* Rounded corners */
-        }
-
-        /* Reduce the space between form elements */
-        .form-outline {
-            margin-bottom: 10px; /* Adjust the margin as needed */
-        }
-
-        /* Style for the transparent button */
-        .transparent-btn {
-            background-color: transparent;
-            border-color: transparent;
-            color: #721fe6; /* Similar to JavaFX color */
-            width: 100%;
-        }
-
-        /* Style for the button when hovered */
-        .transparent-btn:hover {
-            background-color: #721fe6; /* Similar to JavaFX color */
-            border-color: #721fe6; /* Similar to JavaFX color */
-            color: #fff; /* Text color to white */
-        }
-
-        /* Style for the labels */
-        label {
-            color: #000; /* Text color to black */
-        }
-
-        /* Style for the registration button and cancel button */
-        .register-btn, .cancel-btn {
-            background-color: #721fe6; /* Similar to JavaFX color */
-            border-color: #721fe6; /* Similar to JavaFX color */
-            color: #fff; /* Text color to white */
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border-radius: 15px; /* Rounded corners */
-            font-weight: bold;
-        }
-
-        /* Style for the registration button and cancel button when hovered */
-        .register-btn:hover, .cancel-btn:hover {
-            background-color: #5319a8; /* Darker color */
-            border-color: #5319a8; /* Darker color */
-        }
-
-        /* Style for the password toggle icon */
-        .password-toggle-icon {
-            cursor: pointer;
-        }
-
-        /* Style for the purple card */
-        .purple-card {
-            background-color: #721fe6; /* Purple background color */
-            color: #fff; /* Text color to white */
-            border-radius: 0 15px 15px 0; /* Rounded corners only on the right side */
-            padding: 15px;
-        }
-
-        /* Style for the right card */
-        .right-card {
-            border-radius: 15px 0 0 15px; /* Rounded corners only on the left side */
-            padding: 15px;
-        }
-    </style>
 </head>
 <body>
 
-<section class="h-100 gradient-form">
-    <div class="container py-5 h-100">
-        <div class="row h-100">
-            <div class="col-lg-6 px-0">
-                <div class="purple-card">
-                    <h4 class="mb-4">File Flow</h4>
-                    <p class="small mb-0">Copyrights (c). All Rights Reserved</p>
-                </div>
-            </div>
-            <div class="col-lg-6 px-0">
-                <div class="card rounded-3 text-black custom-card right-card">
-                    <div class="card-body p-md-5 mx-md-4">
-                        <div class="text-center">
-                            <h4 class="mt-1 mb-5 pb-1" style=" font-size: 2.0em; font-weight: bold;">Sign Up!</h4>
-                        </div>
-                        <form>
-                            <div class="d-flex align-items-center justify-content-center pb-4">
-                                <p class="mb-0 me-2">Already have an account?</p>
-                                <button id="signInBtn" type="button" class="btn btn-outline-danger">Sign In</button>
-                            </div>
-                            <div class="form-outline mb-4">
-                                <label for="username">Enter Your Username:</label>
-                                <input type="text" id="username" class="form-control" placeholder="Username">
-                            </div>
-                            <div class="form-outline mb-4">
-                                <label for="confirm-username">Confirm Username</label>
-                                <input type="text" id="confirm-username" class="form-control" placeholder="Username">
-                            </div>
-                            <div class="form-outline mb-4">
-                                <label for="password">Create Password:</label>
-                                <div class="input-group">
-                                    <input type="password" id="password" class="form-control" placeholder="Password">
-                                    <span class="input-group-text password-toggle-icon" onclick="togglePasswordVisibility()">
-                                        <i class="bi bi-eye" id="password-icon"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="form-outline mb-4">
-                                <label for="confirm-password">Confirm Password:</label>
-                                <div class="input-group">
-                                    <input type="password" id="confirm-password" class="form-control" placeholder="Password">
-                                    <span class="input-group-text password-toggle-icon" onclick="togglePasswordVisibility()">
-                                        <i class="bi bi-eye" id="confirm-password-icon"></i>
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="text-center pt-1 mb-5 pb-1">
-                                <button class="btn btn-outline-danger fa-lg gradient-custom-2 mb-3 register-btn" type="button">Sign Up</button>
-                                <button class="btn btn-outline-danger cancel-btn" type="button">Cancel</button>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
         </div>
     </div>
-</section>
+</nav>
 
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    function togglePasswordVisibility() {
-        var passwordField = document.getElementById("password");
-        var passwordIcon = document.getElementById("password-icon");
+<!-- Bootstrap JS should be included here if needed -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        if (passwordField.type === "password") {
-            passwordField.type = "text";
-            passwordIcon.className = "bi bi-eye-slash";
-        } else {
-            passwordField.type = "password";
-            passwordIcon.className = "bi bi-eye";
-        }
-    }
-
-    document.getElementById("signInBtn").addEventListener("click", function() {
-        // Redirect to the URL
-        window.location.href = "login.html"; // Replace "signup.html" with the actual URL of your signup page
-    });
-</script>
 </body>
 </html>
