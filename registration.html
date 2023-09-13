@@ -100,7 +100,10 @@
                             <h4 class="mt-1 mb-5 pb-1" style=" font-size: 2.0em; font-weight: bold;">Sign Up!</h4>
                         </div>
                         <form>
-
+                            <div class="d-flex align-items-center justify-content-center pb-4">
+                                <p class="mb-0 me-2">Already have an account?</p>
+                                <button id="signInBtn" type="button" class="btn btn-outline-danger">Sign In</button>
+                            </div>
                             <div class="form-outline mb-4">
                                 <label for="username">Enter Your Username:</label>
                                 <input type="text" id="username" class="form-control" placeholder="Username">
@@ -133,10 +136,6 @@
                                 <button class="btn btn-outline-danger cancel-btn" type="button">Cancel</button>
                             </div>
 
-                            <div class="d-flex align-items-center justify-content-center pb-4">
-                                <p class="mb-0 me-2">Already have an account?</p>
-                                <button id="signInBtn" type="button" class="btn btn-outline-danger">Sign In</button>
-                            </div>
                         </form>
                     </div>
                 </div>
@@ -163,7 +162,7 @@
     }
 
     document.getElementById("signInBtn").addEventListener("click", function() {
-        // Redirect to the desired URL when the button is clicked
+        // Redirect to the URL
         window.location.href = "login.html"; // Replace "signup.html" with the actual URL of your signup page
     });
 </script>
