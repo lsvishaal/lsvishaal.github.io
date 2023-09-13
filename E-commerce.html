@@ -119,6 +119,29 @@
             <button class="btn btn-outline-danger btn-custom login-signup-btn" data-bs-toggle="modal" data-bs-target="#simplifiedModal">Login/Signup</button>
         </div>
     </nav>
+<!-- Auto-Carousel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Auto-Carousel Ends -->
 
     <!-- Product Listings Section -->
     <section class="container mt-4">
@@ -183,7 +206,23 @@
 
 </section>
 
-<!-- ... Rest of your HTML code ... -->
-
 <!-- Include Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript to toggle login form visibility -->
+<script>
+    var loginForm = document.getElementById("loginForm");
+
+    document.getElementById("loginButton").addEventListener("click", function () {
+        // Toggle the visibility of the login form
+        loginForm.style.display = "flex";
+    });
+
+    // Add event listener to the Sign Up button in the simplified modal
+    document.getElementById("signupButton").addEventListener("click", function () {
+        // Implement the logic to show the registration page within the modal
+        alert("Registration Page");
+    });
+</script>
+</body>
+</html>
