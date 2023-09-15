@@ -80,6 +80,12 @@
             border-radius: 15px 0 0 15px; /* Rounded corners only on the left side */
             padding: 15px;
         }
+
+        /* Style for the green login button when clicked */
+        .login-btn.clicked {
+            background-color: #00cc00; /* Green color */
+            border-color: #00cc00; /* Green color */
+        }
     </style>
 </head>
 <body>
@@ -117,7 +123,7 @@
                             </div>
 
                             <div class="text-center pt-1 mb-5 pb-1">
-                                <button class="btn btn-outline-danger fa-lg gradient-custom-2 mb-3 login-btn" type="button">Login</button>
+                                <button class="btn btn-outline-danger fa-lg gradient-custom-2 mb-3 login-btn" type="button" onclick="loginClicked()">Login</button>
                                 <button class="btn btn-outline-danger cancel-btn" type="button">Cancel</button>
                             </div>
 
@@ -148,6 +154,11 @@
             passwordField.type = "password";
             passwordIcon.className = "bi bi-eye";
         }
+    }
+
+    function loginClicked() {
+        var loginBtn = document.querySelector(".login-btn");
+        loginBtn.classList.add("clicked"); // Add the "clicked" class to change button style
     }
 
     document.getElementById("signUpBtn").addEventListener("click", function() {
