@@ -8,13 +8,15 @@
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
         <script src="https://kit.fontawesome.com/c749775705.js" crossorigin="anonymous"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159319154-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-159319154-1');
-        </script>
+        <style>
+            a {
+                color: red; /* Make all hyperlinks red */
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline; /* Optional: Underline links on hover */
+            }
+        </style>
     </head>
     <body>
         <div class="resume">
@@ -26,7 +28,7 @@
                         <div class="github">
                             <a href="https://github.com/lsvishaal" target="_blank">
                                 <i class="fa fa-github" aria-hidden="true"></i>
-                                <span class="only-on-print">Github: lsvishaal</span>
+                                <span class="only-on-print">GitHub: lsvishaal</span>
                             </a>
                         </div>
                         <div class="linkedin">
@@ -38,33 +40,29 @@
                         <div class="email">
                             <a href="mailto:vishaallsv@gmail.com" target="_blank">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <span class="only-on-print">Email: vishaallsv(at)gmail(dot)com</span>
+                                <span class="only-on-print">Email: vishaallsv@gmail.com</span>
                             </a>
                         </div>
                     </div>
                 </div>
             </header>
+            
             <div class="resume-body">
                 <section class="summary">
-                    <h2>
-                        <i class="fa fa-list" aria-hidden="true"></i>
-                        Summary
-                    </h2>
-                    <ul>
-                        Passionate about software development with a strong foundation in programming and backend technologies. Experienced in full-stack web development, data visualization, and API integration. Constantly exploring new technologies and refining problem-solving skills.
-                        <br><br>
-                        <li>Proficient in Python, JavaScript, and SQL.</li>
-                        <li>Frontend experience with React, Tailwind CSS, HTML, and CSS.</li>
-                        <li>Backend expertise in FastAPI and Flask.</li>
-                        <li>Version control and development using Git and Docker.</li>
-                        <li>Interests include weightlifting, nutrition, and MonkeyType.</li>
-                    </ul>
+                    <h2><i class="fa fa-list" aria-hidden="true"></i> Summary</h2>
+                    <p>
+                        I am a visionary professional who focuses on long-term goals and impactful outcomes. As an analytical and curious thinker, I enjoy solving challenging technical problems while continuously expanding my skills and knowledge.
+                    </p>
+                    <p>
+                        Creating tangible results through my work keeps me motivated, and I thrive when contributing to impactful projects that make a difference. With expertise in software development, full-stack development, and scalable solutions, I bridge technical precision with creative problem-solving.
+                    </p>
+                    <p>
+                        Outside of work, I am an avid reader, passionate about weightlifting, and enjoy cooking and gaming as a means of balancing my creative and technical pursuits. I aspire to contribute to fields like software development, data analytics, web development, and open-source initiatives, blending creativity with technical expertise to achieve meaningful results.
+                    </p>
                 </section>
+
                 <section class="about-me">
-                    <h2>
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        About Me
-                    </h2>
+                    <h2><i class="fa fa-user" aria-hidden="true"></i> About Me</h2>
                     <div class="skill-sets">
                         <div class="skill-set">
                             <div class="topic">Nationality</div>
@@ -86,15 +84,48 @@
                 </section>
 
                 <section class="experience">
-                    <h2>
-                        <i class="fa fa-route" aria-hidden="true"></i>
-                        Professional Experience & Projects
-                    </h2>
+                    <h2><i class="fa fa-route" aria-hidden="true"></i> Professional Experience & Projects</h2>
                     <ul>
                         <li class="experience-item">
-                            <span class="bullet-icon">
-                                <i class="fa fa-code"></i>
-                            </span>
+                            <span class="bullet-icon"><i class="fa fa-chart-bar"></i></span>
+                            <div class="experience-date">March 2024 – April 2024</div>
+                            <div class="experience-title">Weather Data Visualization</div>
+                            <div class="experience-place">
+                                <a href="https://github.com/lsvishaal/Weather-Analysis" target="_blank">View</a>
+                            </div>
+                            <div class="experience-info">
+                                Developed a weather analysis tool with a dashboard and visualization features using Python and Chart.JS.
+                            </div>
+                        </li>
+                        <li class="experience-item">
+                            <span class="bullet-icon"><i class="fa fa-laptop-code"></i></span>
+                            <div class="experience-date">Dec 2024 – Jan 2024</div>
+                            <div class="experience-title">GPAlytics</div>
+                            <div class="experience-place">
+                                <a href="https://gpalytics.vercel.app" target="_blank">View</a>
+                            </div>
+                            <div class="experience-info">
+                                Developed a GPA analytics tool with 99% OCR accuracy using Gemini AI API.
+                            </div>
+                        </li>
+                        <li class="experience-item">
+                            <span class="bullet-icon"><i class="fa fa-code"></i></span>
+                            <div class="experience-date">August 2024 – September 2024</div>
+                            <div class="experience-title">Weather – Predictor</div>
+                            <div class="experience-place">
+                                <a href="https://temp-predictor-one.vercel.app/" target="_blank">View</a>
+                            </div>
+                            <div class="experience-info">
+                                Developed a web app to predict temperature and precipitation trends for 2023.
+                                <ul>
+                                    <li>Improved temperature prediction accuracy by 83.8% using Linear Regression.</li>
+                                    <li>Enhanced precipitation prediction performance by 58.9% using Random Forest.</li>
+                                    <li>Built APIs with FastAPI and integrated a React frontend with interactive charts.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="experience-item">
+                            <span class="bullet-icon"><i class="fa fa-code"></i></span>
                             <div class="experience-date">Internship</div>
                             <div class="experience-title">TickingMinds Technologies</div>
                             <div class="experience-place">
@@ -108,60 +139,12 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="experience-item">
-                            <span class="bullet-icon">
-                                <i class="fa fa-chart-bar"></i>
-                            </span>
-                            <div class="experience-date">March 2024 – April 2024</div>
-                            <div class="experience-title">Weather Data Visualization</div>
-                            <div class="experience-place">
-                                <span class="experience-organisation">Self-Project</span>
-                            </div>
-                            <div class="experience-info">
-                                Developed a weather analysis tool with a dashboard and visualization features using Python and Chart.JS.
-                            </div>
-                        </li>
-                        <li class="experience-item">
-                            <span class="bullet-icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </span>
-                            <div class="experience-date">Dec 2024 – Jan 2024</div>
-                            <div class="experience-title">GPAlytics</div>
-                            <div class="experience-place">
-                                <span class="experience-organisation">Self-Project</span>
-                            </div>
-                            <div class="experience-info">
-                                Developed a GPA analytics tool with 99% OCR accuracy using Gemini AI API.
-                            </div>
-                        </li>
-                        <li class="experience-item">
-                            <span class="bullet-icon">
-                                <i class="fa fa-code"></i>
-                            </span>
-                            <div class="experience-date">August 2024 – September 2024</div>
-                            <div class="experience-title">Weather – Predictor</div>
-                            <div class="experience-place">
-                                <span class="experience-organisation">Self-Project</span>
-                                <span class="experience-location">Chennai, IN</span>
-                            </div>
-                            <div class="experience-info">
-                                Developed a web app to predict temperature and precipitation trends for 2023.
-                                <ul>
-                                    <li>Improved temperature prediction accuracy by 83.8% using Linear Regression.</li>
-                                    <li>Enhanced precipitation prediction performance by 58.9% using Random Forest.</li>
-                                    <li>Built APIs with FastAPI and integrated a React frontend with interactive charts.</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul><br>
+                    </ul>
                 </section>
 
                 <div class="resume-side">
                     <section class="skills">
-                        <h2>
-                            <i class="fa fa-mouse" aria-hidden="true"></i>
-                            Technical Skills
-                        </h2>
+                        <h2><i class="fa fa-mouse" aria-hidden="true"></i> Technical Skills</h2>
                         <div class="skill-sets">
                             <div class="skill-set">
                                 <div class="topic">Programming</div>
@@ -186,7 +169,7 @@
         </div>
 
         <section class="resume">
-          <div class="experience-date" style=" position: absolute; left:20px;">Last update on 8th Feb 2025.</div>
+          <div class="experience-date" style="position: absolute; left:20px;">Last update on 8th Feb 2025.</div>
         </section>
     </body>
 </html>
