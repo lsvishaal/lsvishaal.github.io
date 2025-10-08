@@ -27,27 +27,27 @@
       a:hover {
         text-decoration: underline;
       }
-      
+
       /* Mobile Responsive Improvements */
       @media only screen and (max-width: 768px) {
         html {
           font-size: 16px !important; /* Override the 30px from CSS */
         }
-        
+
         .work-role {
           font-size: 1rem !important;
           line-height: 1.3 !important;
           text-align: center !important;
         }
-        
+
         .full-title {
           display: none !important;
         }
-        
+
         .mobile-title {
           display: block !important;
         }
-        
+
         .user-info .links {
           position: relative !important;
           top: auto !important;
@@ -55,68 +55,70 @@
           flex-wrap: wrap !important;
           gap: 0.5rem !important;
         }
-        
+
         .user-info .links a {
           padding: 0.5rem !important;
           font-size: 1.1rem !important;
         }
-        
+
         .resume-body {
           padding: 1rem !important;
           flex-direction: column !important;
         }
-        
-        .summary, .experience, .education {
+
+        .summary,
+        .experience,
+        .education {
           padding-left: 0 !important;
           margin-bottom: 1.5rem !important;
         }
-        
+
         .resume-side {
           padding-left: 0 !important;
           margin-top: 1rem !important;
         }
-        
+
         .experience-info ul {
           padding-left: 2rem !important;
         }
-        
+
         h2 {
           font-size: 1.4rem !important;
         }
-        
+
         .experience-title {
           font-size: 1.4rem !important;
           line-height: 1.3 !important;
         }
       }
-      
+
       /* Tablet improvements */
       @media only screen and (min-width: 769px) and (max-width: 1024px) {
         html {
           font-size: 18px !important; /* Better than 30px */
         }
-        
+
         .work-role {
           font-size: 1.1rem !important;
           line-height: 1.4 !important;
         }
       }
-      
+
       /* Small mobile screens */
       @media only screen and (max-width: 480px) {
         .work-role b {
           display: block !important;
           margin-bottom: 0.3rem !important;
         }
-        
+
         .name {
           font-size: 2.2rem !important;
         }
-        
+
         .user-info .links {
           justify-content: center !important;
         }
-        
+
         .experience-item {
           margin: 1.5rem 0.3rem 0rem 0.3rem !important;
           padding: 0 1rem !important;
@@ -133,9 +135,11 @@
             <span class="full-title">
               <b>Full-Stack Developer | Backend-Focused | FastAPI + React</b>
             </span>
-            <span class="mobile-title" style="display: none;">
-              <b>Full-Stack Developer</b><br>
-              <span style="font-size: 0.9em; opacity: 0.8;">Backend-Focused | FastAPI + React</span>
+            <span class="mobile-title" style="display: none">
+              <b>Full-Stack Developer</b><br />
+              <span style="font-size: 0.9em; opacity: 0.8"
+                >Backend-Focused | FastAPI + React</span
+              >
             </span>
           </div>
           <div class="links">
@@ -167,23 +171,60 @@
       <div class="resume-body">
         <section class="summary">
           <h2><i class="fa fa-list" aria-hidden="true"></i> Summary</h2>
-          <p style="text-align: justify;">
-            Backend developer specializing in Python/FastAPI with experience building production-ready web applications. Contributed error handling fixes, metadata improvements, and serialization crash resolutions to mem0 (40.8K⭐ AI memory infrastructure). Built three deployed applications demonstrating API design, database integration, frontend architecture, and client project delivery.
+          <p style="text-align: justify">
+            Backend developer specializing in Python/FastAPI with experience
+            building production-ready web applications. Contributed error
+            handling fixes, metadata improvements, and serialization crash
+            resolutions to mem0 (40.8K⭐ AI memory infrastructure). Built three
+            deployed applications demonstrating API design, database
+            integration, frontend architecture, and client project delivery.
           </p>
-          <p style="margin-top: 0.8rem; font-style: italic;">
-            <b>Currently:</b> Contributing additional features to mem0 repository and exploring Go for backend microservices.
+          <p style="margin-top: 0.8rem; font-style: italic">
+            <b>Currently:</b> Contributing additional features to mem0
+            repository and exploring Go for backend microservices.
           </p>
         </section>
 
         <section class="opensource">
-          <h2><i class="fa fa-code-branch" aria-hidden="true"></i> Open Source Contributions</h2>
+          <h2>
+            <i class="fa fa-code-branch" aria-hidden="true"></i> Open Source
+            Contributions
+          </h2>
           <ul>
             <li>
-              <b><a href="https://github.com/mem0ai/mem0" target="_blank">mem0ai/mem0</a> (40.8K⭐) — Universal Memory Layer for AI Agents</b>
+              <b
+                ><a href="https://github.com/mem0ai/mem0" target="_blank"
+                  >mem0ai/mem0</a
+                >
+                (40.8K⭐) — Universal Memory Layer for AI Agents</b
+              >
               <ul>
-                <li>Fixed PyPI license link and added PEP 639 metadata (<a href="https://github.com/mem0ai/mem0/pull/3522" target="_blank">#3522</a> merged)</li>
-                <li>Implemented defensive KeyError handling in graph memory search across 10 code locations (<a href="https://github.com/mem0ai/mem0/pull/3524" target="_blank">#3524</a> merged)</li>
-                <li>Resolved AWS auth serialization crash with safe fallback strategy (<a href="https://github.com/mem0ai/mem0/pull/3544" target="_blank">#3544</a> approved)</li>
+                <li>
+                  Fixed PyPI license link and added PEP 639 metadata (<a
+                    href="https://github.com/mem0ai/mem0/pull/3522"
+                    target="_blank"
+                    >#3522</a
+                  >
+                  merged)
+                </li>
+                <li>
+                  Implemented defensive KeyError handling in graph memory search
+                  across 10 code locations (<a
+                    href="https://github.com/mem0ai/mem0/pull/3524"
+                    target="_blank"
+                    >#3524</a
+                  >
+                  merged)
+                </li>
+                <li>
+                  Resolved AWS auth serialization crash with safe fallback
+                  strategy (<a
+                    href="https://github.com/mem0ai/mem0/pull/3544"
+                    target="_blank"
+                    >#3544</a
+                  >
+                  approved)
+                </li>
               </ul>
             </li>
           </ul>
@@ -202,17 +243,34 @@
                 AstroHomes - Modular Real Estate Platform
               </div>
               <div class="experience-place">
-                <a href="https://www.astrohomes.in" target="_blank">astrohomes.in</a> | 
+                <a href="https://www.astrohomes.in" target="_blank"
+                  >astrohomes.in</a
+                >
+                |
                 <span class="experience-organisation">Freelance Project</span>
               </div>
               <div class="experience-info">
-                Designed and built a JSON-driven content management architecture for real estate listings. Client manages 50+ properties through simple JSON file updates.
-                <ul style="margin-top: 0.8rem; line-height: 1.8rem;">
-                  <li><b>Dynamic component system:</b> Engineered React components that read JSON schema and auto-generate property cards, detail pages, and filters. Client can add 50+ listings by editing a single JSON file instead of multiple HTML pages.</li>
-                  <li><b>Production delivery:</b> Deployed client-ready site with full responsive design and accessibility features. Delivered on time with client training on content management workflow.</li>
+                Designed and built a JSON-driven content management architecture
+                for real estate listings. Client manages 50+ properties through
+                simple JSON file updates.
+                <ul style="margin-top: 0.8rem; line-height: 1.8rem">
+                  <li>
+                    <b>Dynamic component system:</b> Engineered React components
+                    that read JSON schema and auto-generate property cards,
+                    detail pages, and filters. Client can add 50+ listings by
+                    editing a single JSON file instead of multiple HTML pages.
+                  </li>
+                  <li>
+                    <b>Production delivery:</b> Deployed client-ready site with
+                    full responsive design and accessibility features. Delivered
+                    on time with client training on content management workflow.
+                  </li>
                 </ul>
-                <div style="margin-top: 1rem; font-style: italic; font-size: 1rem;">
-                  <b>Tech:</b> Next.js 15, React 19, TypeScript, Tailwind CSS, Framer Motion, Radix UI
+                <div
+                  style="margin-top: 1rem; font-style: italic; font-size: 1rem"
+                >
+                  <b>Tech:</b> Next.js 15, React 19, TypeScript, Tailwind CSS,
+                  Framer Motion, Radix UI
                 </div>
               </div>
             </li>
@@ -224,35 +282,72 @@
                 GPAlytics - AI-Powered Student Analytics
               </div>
               <div class="experience-place">
-                <a href="https://gpalytics.vercel.app" target="_blank">gpalytics.vercel.app</a>
+                <a href="https://gpalytics.vercel.app" target="_blank"
+                  >gpalytics.vercel.app</a
+                >
               </div>
               <div class="experience-info">
-                Full-stack tool for processing student grade sheets. Built to practice FastAPI backend with real cloud infrastructure.
-                <ul style="margin-top: 0.8rem; line-height: 1.8rem;">
-                  <li><b>Backend (FastAPI + Azure SQL):</b> Designed schema for student records across semesters. Used UV for fast dependency installs, Docker for consistent environments.</li>
-                  <li><b>Frontend (React + TypeScript):</b> Built UI with Zustand state management. Integrated Gemini AI API for post-processing OCR results and improving accuracy with Chart.js graphs for grade trends.</li>
+                Full-stack tool for processing student grade sheets. Built to
+                practice FastAPI backend with real cloud infrastructure.
+                <ul style="margin-top: 0.8rem; line-height: 1.8rem">
+                  <li>
+                    <b>Backend (FastAPI + Azure SQL):</b> Designed schema for
+                    student records across semesters. Used UV for fast
+                    dependency installs, Docker for consistent environments.
+                  </li>
+                  <li>
+                    <b>Frontend (React + TypeScript):</b> Built UI with Zustand
+                    state management. Integrated Gemini AI API for
+                    post-processing OCR results and improving accuracy with
+                    Chart.js graphs for grade trends.
+                  </li>
                 </ul>
-                <div style="margin-top: 1rem; font-style: italic; font-size: 0.9rem;">
-                  <b>Tech:</b> FastAPI, Azure SQL, Docker, UV, React, TypeScript, Zustand, Chart.js, Gemini AI API
+                <div
+                  style="
+                    margin-top: 1rem;
+                    font-style: italic;
+                    font-size: 0.9rem;
+                  "
+                >
+                  <b>Tech:</b> FastAPI, Azure SQL, Docker, UV, React,
+                  TypeScript, Zustand, Chart.js, Gemini AI API
                 </div>
               </div>
             </li>
 
-            
             <li class="experience-item">
               <span class="bullet-icon"><i class="fa fa-cloud"></i></span>
               <div class="experience-date">August 2024 – September 2024</div>
               <div class="experience-title">Weather Predictor</div>
               <div class="experience-place">
-                <a href="https://temp-predictor-one.vercel.app/" target="_blank">temp-predictor-one.vercel.app</a>
+                <a href="https://temp-predictor-one.vercel.app/" target="_blank"
+                  >temp-predictor-one.vercel.app</a
+                >
               </div>
               <div class="experience-info">
-                Built frontend visualization for weather prediction models (provided by backend team). Focused on user-friendly forecast displays and chart performance.
-                <ul style="margin-top: 0.8rem; line-height: 1.8rem;">
-                  <li><b>Frontend visualization:</b> Created React interface with Chart.js showing temperature/precipitation forecasts with confidence ranges and historical comparisons.</li>
-                  <li><b>Performance optimization:</b> Implemented lazy-loading for chart libraries through React code-splitting to reduce initial bundle size. Memoized components to prevent unnecessary re-renders.</li>
+                Built frontend visualization for weather prediction models
+                (provided by backend team). Focused on user-friendly forecast
+                displays and chart performance.
+                <ul style="margin-top: 0.8rem; line-height: 1.8rem">
+                  <li>
+                    <b>Frontend visualization:</b> Created React interface with
+                    Chart.js showing temperature/precipitation forecasts with
+                    confidence ranges and historical comparisons.
+                  </li>
+                  <li>
+                    <b>Performance optimization:</b> Implemented lazy-loading
+                    for chart libraries through React code-splitting to reduce
+                    initial bundle size. Memoized components to prevent
+                    unnecessary re-renders.
+                  </li>
                 </ul>
-                <div style="margin-top: 1rem; font-style: italic; font-size: 0.9rem;">
+                <div
+                  style="
+                    margin-top: 1rem;
+                    font-style: italic;
+                    font-size: 0.9rem;
+                  "
+                >
                   <b>Tech:</b> React, TypeScript, Chart.js, Vercel
                 </div>
               </div>
@@ -266,23 +361,29 @@
               <i class="fa fa-mouse" aria-hidden="true"></i> Technical Skills
             </h2>
             <div class="skill-sets">
-                <div class="skill-set">
-                  <div class="topic">Backend & APIs</div>
-                  <div class="values">Python, FastAPI, REST API design, JWT authentication</div>
-                </div>
-                <div class="skill-set">
-                  <div class="topic">Frontend</div>
-                  <div class="values">React, Next.js, TypeScript, Tailwind CSS</div>
-                </div>
-                <div class="skill-set">
-                  <div class="topic">Databases & Infrastructure</div>
-                  <div class="values">MongoDB, Azure SQL, Docker, Vercel</div>
-                </div>
-                <div class="skill-set">
-                  <div class="topic">Tools & Libraries</div>
-                  <div class="values">Git, UV, Chart.js, Zustand, Framer Motion, Radix UI</div>
+              <div class="skill-set">
+                <div class="topic">Backend & APIs</div>
+                <div class="values">
+                  Python, FastAPI, REST API design, JWT authentication
                 </div>
               </div>
+              <div class="skill-set">
+                <div class="topic">Frontend</div>
+                <div class="values">
+                  React, Next.js, TypeScript, Tailwind CSS
+                </div>
+              </div>
+              <div class="skill-set">
+                <div class="topic">Databases & Infrastructure</div>
+                <div class="values">MongoDB, Azure SQL, Docker, Vercel</div>
+              </div>
+              <div class="skill-set">
+                <div class="topic">Tools & Libraries</div>
+                <div class="values">
+                  Git, UV, Chart.js, Zustand, Framer Motion, Radix UI
+                </div>
+              </div>
+            </div>
           </section>
 
           <section class="education">
@@ -292,7 +393,7 @@
             <div class="skill-sets">
               <div class="skill-set">
                 <div class="values">
-                  <b>B.Tech Computer Science & Engineering</b><br>
+                  <b>B.Tech Computer Science & Engineering</b><br />
                   SRM Institute of Science and Technology | Expected May 2026
                 </div>
               </div>
