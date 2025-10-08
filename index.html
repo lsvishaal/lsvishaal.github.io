@@ -167,39 +167,26 @@
       <div class="resume-body">
         <section class="summary">
           <h2><i class="fa fa-list" aria-hidden="true"></i> Summary</h2>
-          <p style="text-align: justify; margin-bottom: 1rem;">
-            Backend Developer with hands-on experience building full-stack applications. 
-            Approaches development by understanding problems thoroughly before coding and 
-            learns new technologies through step-by-step implementation.
+          <p style="text-align: justify;">
+            Backend developer specializing in Python/FastAPI with experience building production-ready web applications. Contributed error handling fixes, metadata improvements, and serialization crash resolutions to mem0 (40.8K⭐ AI memory infrastructure). Built three deployed applications demonstrating API design, database integration, frontend architecture, and client project delivery.
           </p>
-          <ul>
-            <li>Focuses on production-ready code that handles edge cases</li>
-            <li>Quick to respond when issues impact users</li>
-            <li>Adapts well to shifting priorities while preferring clear requirements</li>
-            <li>Eager to contribute reliable code on real-world projects</li>
-          </ul>
+          <p style="margin-top: 0.8rem; font-style: italic;">
+            <b>Currently:</b> Contributing additional features to mem0 repository and exploring Go for backend microservices.
+          </p>
         </section>
 
-        <section class="about-me">
-          <h2><i class="fa fa-user" aria-hidden="true"></i> About Me</h2>
-          <div class="skill-sets">
-            <div class="skill-set">
-              <div class="topic">Nationality</div>
-              <div class="values">Indian</div>
-            </div>
-            <div class="skill-set">
-              <div class="topic">Location</div>
-              <div class="values">Chennai, India</div>
-            </div>
-            <div class="skill-set">
-              <div class="topic">Status</div>
-              <div class="values">Open to opportunities</div>
-            </div>
-            <div class="skill-set">
-              <div class="topic">Languages</div>
-              <div class="values">English, Tamil, Telugu, Hindi (Basic)</div>
-            </div>
-          </div>
+        <section class="opensource">
+          <h2><i class="fa fa-code-branch" aria-hidden="true"></i> Open Source Contributions</h2>
+          <ul>
+            <li>
+              <b><a href="https://github.com/mem0ai/mem0" target="_blank">mem0ai/mem0</a> (40.8K⭐) — Universal Memory Layer for AI Agents</b>
+              <ul>
+                <li>Fixed PyPI license link and added PEP 639 metadata (<a href="https://github.com/mem0ai/mem0/pull/3522" target="_blank">#3522</a> merged)</li>
+                <li>Implemented defensive KeyError handling in graph memory search across 10 code locations (<a href="https://github.com/mem0ai/mem0/pull/3524" target="_blank">#3524</a> merged)</li>
+                <li>Resolved AWS auth serialization crash with safe fallback strategy (<a href="https://github.com/mem0ai/mem0/pull/3544" target="_blank">#3544</a> approved)</li>
+              </ul>
+            </li>
+          </ul>
         </section>
 
         <section class="experience">
@@ -215,92 +202,59 @@
                 AstroHomes - Modular Real Estate Platform
               </div>
               <div class="experience-place">
-                <a href="https://www.astrohomes.in" target="_blank">View</a> | 
+                <a href="https://www.astrohomes.in" target="_blank">astrohomes.in</a> | 
                 <span class="experience-organisation">Freelance Project</span>
               </div>
               <div class="experience-info">
-                Role: Sole Developer — responsible for design, frontend implementation, data wiring, and performance.
-                <ul>
-                  <li><b>Smart data-driven pages</b> — automatic component/page generation from evolving JSON, removing manual page creation.</li>
-                  <li><b>Performance & UX</b> — throttled scroll handlers, memoized components, Next.js Image optimizations, and efficient carousel navigation.</li>
-                  <li><b>Animated, accessible UI</b> — responsive animations and accessible components using Framer Motion and Radix UI.</li>
+                Designed and built a JSON-driven content management architecture for real estate listings. Client manages 50+ properties through simple JSON file updates.
+                <ul style="margin-top: 0.8rem; line-height: 1.8rem;">
+                  <li><b>Dynamic component system:</b> Engineered React components that read JSON schema and auto-generate property cards, detail pages, and filters. Client can add 50+ listings by editing a single JSON file instead of multiple HTML pages.</li>
+                  <li><b>Production delivery:</b> Deployed client-ready site with full responsive design and accessibility features. Delivered on time with client training on content management workflow.</li>
                 </ul>
-                <div style="margin-top: 1rem; font-style: italic; font-size: 0.9rem;">
-                  <b>Tech Stack:</b> Next.js 15, React 19, TypeScript, Tailwind CSS, Framer Motion, Radix UI, Embla Carousel
+                <div style="margin-top: 1rem; font-style: italic; font-size: 1rem;">
+                  <b>Tech:</b> Next.js 15, React 19, TypeScript, Tailwind CSS, Framer Motion, Radix UI
                 </div>
               </div>
             </li>
 
             <li class="experience-item">
               <span class="bullet-icon"><i class="fa fa-laptop-code"></i></span>
-              <div class="experience-date">Dec 2024 – Jan 2025</div>
+              <div class="experience-date">December 2024 – January 2025</div>
               <div class="experience-title">
                 GPAlytics - AI-Powered Student Analytics
               </div>
               <div class="experience-place">
-                <a href="https://gpalytics.vercel.app" target="_blank">View</a>
+                <a href="https://gpalytics.vercel.app" target="_blank">gpalytics.vercel.app</a>
               </div>
               <div class="experience-info">
-                Role: Frontend Lead — built the React + TypeScript UI, OCR client flows, and all visualizations. Planning a backend re-architecture to take full ownership of the project.
-                <ul>
-                  <li>Implemented client-side OCR upload and processing, then post-processed results with Gemini AI API to improve accuracy.</li>
-                  <li>Created interactive charts and dashboards for grade visualization and trends.</li>
+                Full-stack tool for processing student grade sheets. Built to practice FastAPI backend with real cloud infrastructure.
+                <ul style="margin-top: 0.8rem; line-height: 1.8rem;">
+                  <li><b>Backend (FastAPI + Azure SQL):</b> Designed schema for student records across semesters. Used UV for fast dependency installs, Docker for consistent environments.</li>
+                  <li><b>Frontend (React + TypeScript):</b> Built UI with Zustand state management. Integrated Gemini AI API for post-processing OCR results and improving accuracy with Chart.js graphs for grade trends.</li>
                 </ul>
+                <div style="margin-top: 1rem; font-style: italic; font-size: 0.9rem;">
+                  <b>Tech:</b> FastAPI, Azure SQL, Docker, UV, React, TypeScript, Zustand, Chart.js, Gemini AI API
+                </div>
               </div>
             </li>
 
-            <li class="experience-item">
-              <span class="bullet-icon"><i class="fa fa-chart-bar"></i></span>
-              <div class="experience-date">March 2024 – April 2024</div>
-              <div class="experience-title">Weather Data Visualization Dashboard</div>
-              <div class="experience-place">
-                <a href="https://github.com/lsvishaal/Weather-Analysis" target="_blank">View</a>
-              </div>
-              <div class="experience-info">
-                Role: Data & Visualization — built the dashboard frontend and Python ETL for charting.
-                <ul>
-                  <li>Created interactive charts using Chart.js and wrote data pipelines in Python to prepare inputs.</li>
-                </ul>
-              </div>
-            </li>
-
+            
             <li class="experience-item">
               <span class="bullet-icon"><i class="fa fa-cloud"></i></span>
               <div class="experience-date">August 2024 – September 2024</div>
               <div class="experience-title">Weather Predictor</div>
               <div class="experience-place">
-                <a href="https://temp-predictor-one.vercel.app/" target="_blank">View</a>
+                <a href="https://temp-predictor-one.vercel.app/" target="_blank">temp-predictor-one.vercel.app</a>
               </div>
               <div class="experience-info">
-                Role: ML & Backend — developed prediction models and exposed them via APIs.
-                <ul>
-                  <li>Built temperature prediction (Linear Regression) and precipitation models (Random Forest) with feature engineering and preprocessing.</li>
-                  <li>Served model predictions through FastAPI endpoints and integrated a React frontend for visualization.</li>
+                Built frontend visualization for weather prediction models (provided by backend team). Focused on user-friendly forecast displays and chart performance.
+                <ul style="margin-top: 0.8rem; line-height: 1.8rem;">
+                  <li><b>Frontend visualization:</b> Created React interface with Chart.js showing temperature/precipitation forecasts with confidence ranges and historical comparisons.</li>
+                  <li><b>Performance optimization:</b> Implemented lazy-loading for chart libraries through React code-splitting to reduce initial bundle size. Memoized components to prevent unnecessary re-renders.</li>
                 </ul>
-              </div>
-            </li>
-
-            <li class="experience-item">
-              <span class="bullet-icon"><i class="fa fa-briefcase"></i></span>
-              <div class="experience-date">June 2024</div>
-              <div class="experience-title">
-                Internship - TickingMinds Technologies
-              </div>
-              <div class="experience-place">
-                <span class="experience-organisation">On-Site</span>
-              </div>
-              <div class="experience-info">
-                <ul>
-                  <li>
-                    Completed hands-on coursework on <b>Software Testing & IoT</b>.
-                  </li>
-                  <li>
-                    Explored <b>software testing methodologies</b>, including automation testing frameworks.
-                  </li>
-                  <li>
-                    Gained knowledge of <b>IoT network protocols & cloud integrations</b>.
-                  </li>
-                </ul>
+                <div style="margin-top: 1rem; font-style: italic; font-size: 0.9rem;">
+                  <b>Tech:</b> React, TypeScript, Chart.js, Vercel
+                </div>
               </div>
             </li>
           </ul>
@@ -313,12 +267,20 @@
             </h2>
             <div class="skill-sets">
                 <div class="skill-set">
-                  <div class="topic">Primary</div>
-                  <div class="values">Python, FastAPI, MongoDB, TypeScript, React, Next.js, Tailwind CSS</div>
+                  <div class="topic">Backend & APIs</div>
+                  <div class="values">Python, FastAPI, REST API design, JWT authentication</div>
                 </div>
                 <div class="skill-set">
-                  <div class="topic">Secondary</div>
-                  <div class="values">SQL, Docker, Chart.js, JWT</div>
+                  <div class="topic">Frontend</div>
+                  <div class="values">React, Next.js, TypeScript, Tailwind CSS</div>
+                </div>
+                <div class="skill-set">
+                  <div class="topic">Databases & Infrastructure</div>
+                  <div class="values">MongoDB, Azure SQL, Docker, Vercel</div>
+                </div>
+                <div class="skill-set">
+                  <div class="topic">Tools & Libraries</div>
+                  <div class="values">Git, UV, Chart.js, Zustand, Framer Motion, Radix UI</div>
                 </div>
               </div>
           </section>
@@ -329,28 +291,15 @@
             </h2>
             <div class="skill-sets">
               <div class="skill-set">
-                <div class="topic">Degree</div>
                 <div class="values">
-                  B.Tech in Computer Science and Engineering
+                  <b>B.Tech Computer Science & Engineering</b><br>
+                  SRM Institute of Science and Technology | Expected May 2026
                 </div>
-              </div>
-              <div class="skill-set">
-                <div class="topic">Institution</div>
-                <div class="values">SRM Institute of Science and Technology</div>
-              </div>
-              <div class="skill-set">
-                <div class="topic">Graduation</div>
-                <div class="values">Expected May 2026</div>
               </div>
             </div>
           </section>
         </div>
       </div>
     </div>
-    <section class="resume">
-      <div class="experience-date" style="position: absolute; left: 20px">
-        Last update on 19th August 2025.
-      </div>
-    </section>
   </body>
 </html>
