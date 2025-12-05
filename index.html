@@ -255,20 +255,20 @@ but I know what "good" looks like and I won't settle for less.
                 <span class="only-on-print"> &middot; github.com/lsvishaal/constructure-rag</span>
               </div>
               <div class="experience-info">
-                Built production RAG pipeline for construction document Q&amp;A, handling complex technical specifications and multi-page dependencies.
+                Built production RAG pipeline for construction document Q&amp;A with source citations.
                 <ul style="margin-top: 0.5rem; line-height: 1.6rem">
                   <li>
-                    Designed <b>hybrid retrieval system</b> (vector + BM25 + RRF) balancing recall vs latency. Achieved <b>0.87 RAGAS context relevancy</b> with <b>~100ms query latency</b>, enabling real-time user interaction
+                    Designed <b>hybrid retrieval system</b> (vector + BM25 + Reciprocal Rank Fusion) to balance recall vs latency. Handles exact code/identifier matching that pure semantic search misses. Hybrid retrieval completes <b>&lt;100ms</b>; full Q&amp;A responses <b>5-10 seconds</b> with local LLM inference
                   </li>
                   <li>
-                    Optimized ingestion throughput to <b>30 pages/sec</b> using structure-aware chunking and semantic overlaps. Reduced document processing from hours to minutes, making system practical for production
+                    Optimized ingestion with structure-aware chunking (300 words, 75-word overlap) achieving <b>30 pages/sec</b> throughput. Reduced multi-document processing from hours to minutes, enabling practical production deployment
                   </li>
                   <li>
-                    Production-hardened with LRU query caching (1hr TTL), Docker Compose deployment, structured logging. <b>85% inference speedup</b> on cached queries, <b>89% test coverage</b>
+                    Production-hardened with LRU query caching (1hr TTL), Docker Compose deployment, structured logging, and comprehensive test suite. Cached queries return in <b>&lt;10ms</b>
                   </li>
                 </ul>
                 <div style="margin-top: 0.5rem; font-size: 0.85rem; color: #555;">
-                  FastAPI &middot; Qdrant &middot; Ollama &middot; PyMuPDF &middot; BGE-small-v1.5
+                  FastAPI &middot; Qdrant &middot; Ollama (Qwen 2.5 7B) &middot; PyMuPDF &middot; BGE-small-v1.5
                 </div>
               </div>
             </li>
@@ -283,20 +283,20 @@ but I know what "good" looks like and I won't settle for less.
                 Automated code review using LLM orchestration to catch issues humans miss in initial reviews.
                 <ul style="margin-top: 0.5rem; line-height: 1.6rem">
                   <li>
-                    Designed <b>4-agent architecture</b> (logic, readability, performance, security) with specialized responsibilities. Aggregate scoring <b>reduced false positives by 40%</b> vs single-agent approach
+                    Designed <b>4-agent architecture</b> (logic, readability, performance, security) with specialized responsibilities and parallel execution. Each agent independently analyzes code changes, with deduplication and severity-based aggregation to consolidate findings across domains
                   </li>
                   <li>
-                    Achieved <b>89% accuracy</b> matching experienced human reviewers on security vulnerabilities. Validated via blind comparison on <b>200+ real GitHub PRs</b>
+                    Achieved high-precision security analysis using specialized prompts grounded in <b>OWASP Top 10</b> and <b>CWE standards</b>. Validated on real-world GitHub PRs with structured output enabling human-in-the-loop review workflows
                   </li>
                   <li>
-                    Integrated with GitHub API for live PR reviews or standalone offline analysis. Supports <b>13+ languages</b> via tree-sitter parsing
+                    Integrated with GitHub API for live PR reviews and standalone offline analysis via raw diff input. Supports multiple programming languages with <b>automatic language detection</b> and binary file filtering
                   </li>
                   <li>
-                    Observability: structured logging, Prometheus metrics, Docker deployment, <b>92% test coverage</b>
+                    Production-grade observability: Structured JSON logging with request tracing, Prometheus metrics (request rate, latency, error tracking), Grafana dashboards, Docker Compose orchestration across 5 services with health checks and non-root execution. <b>60+ unit and integration tests</b> covering agents, diff parsing, GitHub API client, and endpoints
                   </li>
                 </ul>
                 <div style="margin-top: 0.5rem; font-size: 0.85rem; color: #555;">
-                  FastAPI &middot; LLM Agents (Ollama) &middot; Pydantic &middot; GitHub API &middot; tree-sitter
+                  FastAPI &middot; LLM Agents (Ollama) &middot; Pydantic &middot; GitHub API &middot; Prometheus &middot; Docker &middot; Async Python
                 </div>
               </div>
             </li>
@@ -343,7 +343,7 @@ but I know what "good" looks like and I won't settle for less.
               <div class="skill-set">
                 <div class="topic"><b>AI/ML Systems</b></div>
                 <div class="values">
-                  RAG pipelines, vector databases (Qdrant), LLM orchestration (Ollama), semantic chunking, hybrid retrieval (BM25 + RRF), RAGAS evaluation
+                  RAG pipelines, vector databases (Qdrant), LLM orchestration (Ollama), semantic chunking, hybrid retrieval (BM25 + RRF)
                 </div>
               </div>
               <div class="skill-set">
