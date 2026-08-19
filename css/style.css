@@ -76,7 +76,7 @@ h2 i {
   font-weight: 100;
   position: absolute;
   font-size: 1.3rem;
-  top: 7rem;
+  top: 8.5rem;
   justify-content: center;
   margin: auto;
   margin-top: 1.5rem;
@@ -230,6 +230,11 @@ h2 i {
 }
 .bullet-icon.u-childCorrection {
   left: -0.9rem;
+}
+.tech-stack {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #555;
 }
 @media print {
   html {

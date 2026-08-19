@@ -1,0 +1,105 @@
+% Vishaal LS -- Resume (Overleaf/LaTeX baseline)
+% Kept in sync with index.html. Any content change to index.html must be
+% mirrored here in the same commit -- see CLAUDE.md.
+%
+% Single column, ATS-safe, one page. No fabricated employment entries:
+% Open Source contributions are labeled as open source, not as jobs.
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+% Compiles with pdfLaTeX (Overleaf default). No fontspec/custom fonts needed.
+
+\setlength{\parindent}{0pt}
+\pagenumbering{gobble}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+\newcommand{\headerlink}[2]{\href{#1}{#2}}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\Huge \textbf{Vishaal LS}}\\[2pt]
+  {\large Backend Engineer $\vert$ Python $\cdot$ FastAPI $\cdot$ APIs $\cdot$ Systems}\\[2pt]
+  {\small Chennai, India $\cdot$ Open to relocation}\\[2pt]
+  {\small
+    \headerlink{https://github.com/lsvishaal}{github.com/lsvishaal} $\cdot$
+    \headerlink{https://www.linkedin.com/in/vishaal-ls-439196181}{linkedin.com/in/vishaal-ls} $\cdot$
+    \headerlink{mailto:vishaallsv@gmail.com}{vishaallsv@gmail.com} $\cdot$
+    +91 8610 281147
+  }
+\end{center}
+
+% ---------- Summary ----------
+\section*{Summary}
+I care more about building things right than building things fast. I research before I code, I understand before I implement, and I don't move on until it's something I'd be proud to show. I'm drawn to backend and systems because I like problems that have answers -- not opinions.
+
+% ---------- Open Source ----------
+\section*{Open Source}
+\textbf{\headerlink{https://github.com/mem0ai/mem0}{mem0ai/mem0}} (53K+\textsuperscript{$\star$}) -- Memory Layer for AI Agents
+\begin{itemize}
+  \item Fixed critical \textbf{graph memory KeyError cascade} affecting multi-agent systems. Implemented defensive handling across memory search pipeline, preventing production crashes that broke session continuity (\headerlink{https://github.com/mem0ai/mem0/pull/3524}{\#3524})
+  \item Resolved \textbf{AWS authentication serialization flaw} in enterprise deployments. Designed safe fallback mechanism ensuring graceful degradation under network failures (\headerlink{https://github.com/mem0ai/mem0/pull/3544}{\#3544})
+  \item Fixed PyPI compliance (PEP 639) enabling 1000+ dependency managers to resolve package correctly. Demonstrates ability to work in large established codebases with peer review rigor (\headerlink{https://github.com/mem0ai/mem0/pull/3522}{\#3522})
+\end{itemize}
+
+% ---------- Experience ----------
+\section*{Experience}
+
+\textbf{\headerlink{https://github.com/lsvishaal/tokburn}{TokBurn}} -- Developer Tooling \\
+Built and published CLI tool that parses Claude Code's local JSONL session files to surface token waste patterns and cost attribution via a FastAPI dashboard. Zero external API calls -- fully local.
+\begin{itemize}
+  \item Launch post hit \textbf{67K+ views} on r/ClaudeCode; featured in \textbf{Awesome Claude Tools}. Community user analyzed 1,765 sessions revealing \$5,209 equivalent API cost -- the data story drove adoption.
+  \item Handles edge cases in Claude Code's session format across versions; published on PyPI (\texttt{pip install tokburn}). Zero external API calls -- fully local analysis.
+\end{itemize}
+\textit{Python $\cdot$ FastAPI $\cdot$ PyPI $\cdot$ Async Python}
+
+\textbf{\headerlink{https://github.com/lsvishaal/constructure-rag}{Document Intelligence System}} -- RAG Pipeline \\
+Built production RAG pipeline for construction document Q\&A with source citations.
+\begin{itemize}
+  \item Designed \textbf{hybrid retrieval system} (vector + BM25 + Reciprocal Rank Fusion) to balance recall vs latency. Handles exact code/identifier matching that pure semantic search misses. Hybrid retrieval completes \textbf{<100ms}; full Q\&A responses \textbf{5-10 seconds} with local LLM inference
+  \item Optimized ingestion with structure-aware chunking (300 words, 75-word overlap) achieving \textbf{30 pages/sec} throughput. Reduced multi-document processing from hours to minutes, enabling practical production deployment
+  \item Production-hardened with LRU query caching (1hr TTL), Docker Compose deployment, structured logging, and comprehensive test suite. Cached queries return in \textbf{<10ms}
+\end{itemize}
+\textit{FastAPI $\cdot$ Qdrant $\cdot$ Ollama (Qwen 2.5 7B) $\cdot$ PyMuPDF $\cdot$ BGE-small-v1.5}
+
+\textbf{\headerlink{https://github.com/lsvishaal/Lyzer_PR_Review}{Multi-Agent Code Review System}} -- LLM Orchestration \\
+Automated code review using LLM orchestration to catch issues humans miss in initial reviews.
+\begin{itemize}
+  \item Designed \textbf{4-agent architecture} (logic, readability, performance, security) with specialized responsibilities and parallel execution. Each agent independently analyzes code changes, with deduplication and severity-based aggregation to consolidate findings across domains
+  \item Achieved high-precision security analysis using specialized prompts grounded in \textbf{OWASP Top 10} and \textbf{CWE standards}. Validated on real-world GitHub PRs with structured output enabling human-in-the-loop review workflows
+  \item Integrated with GitHub API for live PR reviews and standalone offline analysis via raw diff input. Supports multiple programming languages with \textbf{automatic language detection} and binary file filtering
+  \item Production-grade observability: structured JSON logging with request tracing, Prometheus metrics, Grafana dashboards, Docker Compose orchestration across 5 services with health checks and non-root execution. \textbf{60+ unit and integration tests} covering agents, diff parsing, GitHub API client, and endpoints
+\end{itemize}
+\textit{FastAPI $\cdot$ LLM Agents (Ollama) $\cdot$ Pydantic $\cdot$ GitHub API $\cdot$ Prometheus $\cdot$ Docker $\cdot$ Async Python}
+
+\textbf{\headerlink{https://www.astrohomes.in}{AstroHomes}} -- Real Estate Platform (Live) \\
+Built production platform for property management startup, enabling non-technical client to manage 50+ listings without code changes.
+\begin{itemize}
+  \item Designed JSON-driven CMS enabling non-technical client to manage \textbf{50+ properties} independently. Reduced update cycle from \textbf{30 min to 6 min} (\textbf{80\% faster}), eliminating scaling bottleneck
+  \item Implemented responsive design with accessibility compliance (WCAG 2.1 AA). \textbf{95+ Lighthouse scores}, ensuring usability on rural connections and older devices
+  \item Built analytics dashboard tracking performance, traffic, and conversions. Client used insights to optimize portfolio focus on \textbf{top revenue-driving properties}
+\end{itemize}
+\textit{Next.js $\cdot$ TypeScript $\cdot$ Tailwind CSS $\cdot$ React Query $\cdot$ Vercel}
+
+% ---------- Technical Skills ----------
+\section*{Technical Skills}
+\textbf{Backend \& APIs:} Python 3.12, FastAPI, async/await, REST API design, Pydantic, type hints \\
+\textbf{AI/ML Systems:} RAG pipelines, vector databases (Qdrant), LLM orchestration (Ollama), semantic chunking, hybrid retrieval (BM25 + RRF) \\
+\textbf{Infrastructure:} Docker, Docker Compose, PostgreSQL, MongoDB, structured logging, Prometheus, GitHub Actions \\
+\textbf{Testing:} pytest, integration testing, 90\%+ coverage practice
+
+% ---------- Education ----------
+\section*{Education}
+\textbf{B.Tech CSE}, SRM Institute of Science and Technology (May 2026)
+
+\end{document}
